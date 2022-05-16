@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+#tabela{
+    position: absolute;
+    text-align: center;
+        top: 40%;
+        left: 40%;
+}
+tr:nth-child(odd){
+    background-color: rgb(243, 193, 193);
+}
+
+tr:nth-child(even){
+    background-color: rgb(231, 144, 144);
+}
+

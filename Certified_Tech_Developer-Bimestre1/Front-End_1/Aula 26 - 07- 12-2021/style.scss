@@ -1,0 +1,44 @@
+@import "_variaveis.scss";
+@import "_mixins.scss";
+$cor-principal: green;
+$cor-secundaria: blue;
+$largura-botao: 300px;
+$altura-botao: 100px;
+$tam-texto-botao:50px;
+
+ul {
+    li {
+        list-style: none;
+        color:$cor-principal;
+    }
+}
+
+.btn{
+    width: $largura-botao;
+    height: $altura-botao;
+    font-size: $tam-texto-botao;
+    margin: 50px;
+    border-radius: 50px;
+    border-width: 0;
+    &-info{
+      background-color: purple;
+      color: white;
+    }
+    &-confirm {
+        background-color: green;
+    }
+    &-cancel {
+        background-color: pink;
+    }
+  }
+
+.btn-large{
+    @extend .btn;
+    width: $largura-botao*2;
+    height: $altura-botao*2;
+    font-size: $tam-texto-botao*1.5;
+
+
+}
+
+

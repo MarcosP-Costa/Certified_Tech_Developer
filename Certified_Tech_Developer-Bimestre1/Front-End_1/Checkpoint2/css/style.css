@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F7BD4A;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 40px;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(54, 56, 46);
+    margin-top: 15px;
+}
+
+
+.campos{
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 40px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.checkbox{
+    display: block;
+    padding: 7px;
+}
+
+.container{
+    display: block;
+    padding: 7px;
+}
+
+.enviar {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background-color: rgb(143, 192, 169);
+    color: rgb(250, 243, 221);
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 45px;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    border-radius: 5px;
+    border-color: rgb(143, 192, 169);
+}
+
+.apagar {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background-color: rgb(152, 68, 71);
+    color: rgb(250, 243, 221);
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 45px;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    border-radius: 5px;
+    border-color: rgb(152, 68, 71);
+}
+
+.enviar:hover {
+    transform: scale(1.2);
+}
+
+.apagar:hover {
+    transform: scale(1.2);
+}
+
+.apagar{
+    margin-left: 10px;
+}

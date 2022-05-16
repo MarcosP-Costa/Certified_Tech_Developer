@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: honeydew;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+}
+
+h1:hover{
+    color: hotpink;
+}
+
+h1:active{
+    color: lawngreen;
+}
+
+input:focus-visible{
+    outline-width: 5px;
+}
+
+.check-lembrar:checked{
+    margin-right: 20px;
+}
+
+ul li:nth-child(odd){
+    color: lawngreen;
+}
+
+ul li:nth-child(even){
+    color: wheat;
+}
+
+ul li::before, ul li::after{
+    content: " 😎 "
+}

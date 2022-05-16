@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e35869;
+    font-family: sans-serif;
+}
+
+.cadastro{
+    background-color: #fff;
+    width: 500px;
+    color: #000;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.botao-login{
+
+    text-decoration: none;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 2px;
+    border-width: 0px;
+    transition: margin-left 1.5s;
+    transition-timing-function: ease-in;
+}
+
+.botao-login:hover {
+    margin-left: 100px;
+    
+}
+

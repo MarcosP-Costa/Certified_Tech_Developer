@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background-color:sandybrown;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-style: italic;
+}
+
+img{
+    margin: 5px 0 20px 0;
+}
+label{
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+
+#formulario1{
+    display: flex;
+}
+
+.campo{
+    padding: 5px 0 5px 0;
+    margin: 5px 0 5px 0;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.campinho{
+    
+    background-color: purple;
+    width: 100%;
+}
+
+
+

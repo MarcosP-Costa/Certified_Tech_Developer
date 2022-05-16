@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulario </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="https://assets.digitalhouse.com/pg/prod/logos/pg.svg">
+        </header>
+        <h1> Formulario de Contato </h1>
+       <form action="/registro" method="post" id="formulario1">
+        <div class="campo">
+           <label>Nome: </label>
+           <input type="text" name="usuario" class="campinho">
+        
+        <div class="campo"></div>
+           <label>Senha: </label>
+           <input type="password" name="senha" class="campinho">
+        
+        <div class="campo"></div>
+           <label>Email: </label>
+           <input type="email" name="email" class="campinho">
+         <div class="campo">
+            <select name="estados" id="estados">
+
+               <option value = "0" disabled selected>Selecione um estado</option>
+               <option value = "Pernambuco-PE">Pernambuco-PE</option>
+               <option value = "Bahia-BA">Bahia-BA</option>
+               <option value = "Rio de Janeiro-RJ ">Rio de Janeiro-RJ</option>
+               <option value = "Minas Gerais-MG">Minas Gerais-MG</option>
+               <option value = "Mato Grosso-MT">Mato Grosso-MT</option>
+
+             </select>
+         </div>
+        
+        <div class="campo"></div>
+           <label for="comentario">Deixe o seu comentário:</label>
+           <textarea name="comentario" id="comentario" class="campinho"></textarea>
+        </div>
+
+       </form> 
+    </body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <title>Checkpoint 2 - Grupo 2</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cadastro">Cadastro
+
+        </h1>
+        <img class="imagem" src="./imagens/icon.png">
+    </header>
+
+    <div class="background">
+
+    </div>
+
+    <form action="#" method="post">
+        <fieldset class="grupo">
+            <div class="campos">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" maxlength="100">
+            </div>
+            <div class="campos">
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="campos">
+                <label for="numero">Telefone: </label>
+                <input type="number" name="numero" id="numero">
+            </div>
+            <div class="campos">
+                <label for="dataNascimento">Data de Nascimento: </label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </div>
+            <div class="campos">
+                Você é:
+                <label class="checkbox">
+                    <input type="radio" name="idade" value="menorIdade"> Maior de idade</label>
+                <label class="checkbox">
+                    <input type="radio" name="idade" value="maiorIdade"> Menor de Idade</label>
+            </div>
+            <div class="campos">
+                Ponto de interesse:
+                <label class="checkbox">
+                    <input type="radio" name="pontoInt" value="liberdade"> Praça da Liberdade</label>
+
+                <div class="card">
+                    <div class="content">
+                        <h1 class="tituloCard"> Praça da Liberdade! </h1>
+                        <p class="textoCard"> <a href="https://www.instagram.com/"> Clique aqui para saber mais!</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <label class="checkbox">
+                    <input type="radio" name="pontoInt" value="mercado"> Mercado Central</label>
+                <div class="card">
+                    <div class="content">
+                        <h1 class="tituloCard"> Mercado Central </h1>
+                        <p class="textoCard"> <a href="https://www.instagram.com/"> Clique aqui para saber mais! </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <label class="checkbox">
+                    <input type="radio" name="pontoInt" value="lagoa"> Lagoa da Papulha</label>
+                <div class="card">
+                    <div class="content">
+                        <h1 class="tituloCard"> Lagoa da Papulha </h1>
+                        <p class="textoCard"> <a href="https://www.instagram.com/"> Clique aqui para saber mais! </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="campos">
+                Interesse na Cidade:
+                <label class="container"> Turista
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container"> Residente
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container"> Estudante
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </fieldset>
+        <div class="botao">
+            <button class="enviar" type="button">Enviar</button>
+            <button class="apagar" type="button">Resetar</button>
+        </div>
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

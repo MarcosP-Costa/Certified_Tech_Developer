@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(236, 199, 199);
+}
+
+body {
+    margin: 5px;
+}
+
+#caixas{
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    padding: 10px;
+    border: dashed 2px yellow;
+}
+
+#caixinhas{
+    background-color: royalblue;
+    height: 75px;
+    width: 75px;
+    padding: 20px 0 0 0;
+    margin: 0px;
+}
+
+.caixa1{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.caixinha1{
+    text-align: center;
+    position: absolute;
+
+    left: 35px;
+    top: 35px;
+}
+
+.caixa2{
+    position: fixed;
+    left: 45%;
+    bottom: 5%;
+}
+
+.caixinha2{
+    position: absolute;
+    left: 35px;
+    top: 35px;
+
+}
+
+.caixa3{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.caixinha3{
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+
+
+.space{
+    height: 1000px;
+}
+

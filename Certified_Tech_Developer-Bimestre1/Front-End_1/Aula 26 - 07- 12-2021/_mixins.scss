@@ -1,0 +1,13 @@
+@mixin btn-aside {
+    width: $largura-botao/2;
+    height: $largura-botao/2;
+    font-size: $tam-texto-botao/2;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 5px;
+        a{
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+        }
+}
