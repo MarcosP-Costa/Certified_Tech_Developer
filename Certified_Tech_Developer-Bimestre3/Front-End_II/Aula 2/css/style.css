@@ -1,0 +1,14 @@
+*{
+    text-align: center;
+}
+
+.container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+
+
+}

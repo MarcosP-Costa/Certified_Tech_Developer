@@ -61,29 +61,29 @@ if (numComputador == 1) {
 let rodada = 0
 let vitoriaUsuario = 0
 let vitoriaComputador = 0
+let jogadasUsuario = []
+let jogadasComputador = []
 
 
-definirVencedor();
 
 
-function definirVencedor(){
-    if (numUsuario == numComputador) {
-        //Aqui vemos quem vendeu, a lógica é simples, Tirando PEDRA, o número de cada sinal tem vantagem sobre o anterior
-        //Papel=2 tem vantagem na Pedra=1, tesoura=3 tem vantagem contra papel=2
-        //Então eu subtraio o valor 2 pelo valor 1, caso de 1 ou -2, o usuario venceu
-        //Porque Papel=2 menos Pedra=1 sobra 1
-        // Tesoura=3 menos Papel=2 sobra 1
-        //E por ultimo, Pedra=1 menos Tesoura=3 sobra -2
-        //Nesses casos o jogador um vence, e para saber se o jogador 2 vence, é só inverter os valores =D
-        alert("FOI UM EMPATE!")
-    } else if ((numUsuario - numComputador) == 1 || (numUsuario - numComputador) == -2) {
-        alert("O Jogador 1 Venceu!")
-    } else if ((numUsuario - numComputador) == -1 || (numUsuario - numComputador) == 2) {
-        alert("O Jogador 2 Venceu!")
-    } else {
-        alert(numComputador)
-        alert(numUsuario)
-    }
+
+
+
+
+
+
+while(rodada<=3){
+    if ((numUsuario - numComputador) == 1 || (numUsuario - numComputador) == -2) {
+        vitoriaUsuario++
+        rodada++
+        } else if ((numUsuario - numComputador) == -1 || (numUsuario - numComputador) == 2) {
+        vitoriaComputador++
+        rodada++
+        }
 }
+alert(vitoriaComputador)
+alert(vitoriaUsuario)
+
 
 
