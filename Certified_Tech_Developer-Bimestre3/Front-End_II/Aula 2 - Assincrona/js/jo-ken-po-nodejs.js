@@ -2,9 +2,8 @@ var numComputador = parseInt(Math.random() * 3 + 1)
 var numUsuario = parseInt(Math.random() * 3 + 1)
 var vitoriaUsuario = 0
 var vitoriaComputador = 0
-let jogadasUsuario = []
-let jogadasComputador = []
 var rodada = 0
+
 
 //alert("Vamos jogar JoKenPo!")
 function converterNumero(numParam) {
@@ -33,8 +32,6 @@ function jogar(usuarioParam, computadorParam) {
 
 
             vitoriaUsuario++
-            jogadasComputador.push(converterNumero(computadorParam))
-            jogadasUsuario.push(converterNumero(usuarioParam))
             rodada++
             console.log("Usuario Venceu");
         
@@ -42,8 +39,6 @@ function jogar(usuarioParam, computadorParam) {
 
 
             vitoriaComputador++
-            jogadasComputador.push(converterNumero(computadorParam))
-            jogadasUsuario.push(converterNumero(usuarioParam))
             rodada++
             console.log("Computador Venceu");
         
