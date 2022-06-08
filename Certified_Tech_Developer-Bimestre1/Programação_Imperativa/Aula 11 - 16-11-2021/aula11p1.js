@@ -38,3 +38,4 @@ function comparar(asia, europa){
 }
 
 
+console.log(comparar(asia, europa))
