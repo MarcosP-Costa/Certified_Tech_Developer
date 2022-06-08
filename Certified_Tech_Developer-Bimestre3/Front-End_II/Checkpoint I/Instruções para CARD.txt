@@ -1,0 +1,18 @@
+criar um h4 titulo do titulo do card
+atribuir a classe mb-3 ao h4
+criar um h5 titulo do card
+atribuir a classe mb-3 tituloCard ao h5
+modificar o valor do tituloCard para o que foi escrito
+criar uma div estrutura do card
+atribuir a classe row g-3 a div
+criar uma div deixa a imagem certa
+atribuir a classe col-sm-6 a div
+criar uma img
+atribuir a classe imagemCard a img
+atribuir o atributo src="" + o que foi escrito a img
+criar uma h4 para a descrição
+atribuir a classe mb-3 a descrição
+criar uma div
+atribuir a classe = descricaoCard a div
+criar a tag hr
+atribuir a classe my-4 ao hr
