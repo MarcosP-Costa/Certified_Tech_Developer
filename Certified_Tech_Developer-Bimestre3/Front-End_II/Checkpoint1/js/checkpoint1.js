@@ -10,13 +10,17 @@ adicionar.addEventListener('click', function(event){ //aqui fazemos toda a funç
    event.preventDefault()
    
    document.getElementById('cards').innerHTML += `
-   <div class="card">
-   <img src="${cartao.imagem.value}"> </img>
+   <div class="col-md-4 card">
+   <img class="imagem" src="${cartao.imagem.value}"> </img>
+   <div class="texto">
    <h1> ${cartao.titulo.value} </h1>
    <p>${cartao.descricao.value}</p>
    </div>
+   </div>
 `;
 })
+
+
 
 
 
