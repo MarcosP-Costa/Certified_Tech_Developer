@@ -1,10 +1,10 @@
 const baseDeDados = {
-    "resultado": [{
+    "resultado": {
         "genero": "masculino",
         "nome": {
             "titulo": "sr",
             "primeiro": "David",
-            "utlimo": "Fernando"
+            "ultimo": "Fernando"
         },
         "localizacao": {
             "rua": " Augusta , 238",
@@ -50,7 +50,7 @@ const baseDeDados = {
             "miniatura": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
         },
         "nat": "IE"
-    }],
+    },
     "info": {
         "seed": "fea8be3e64777240",
         "resultado": 1,
@@ -59,30 +59,33 @@ const baseDeDados = {
     }
 };
 
+
 let consultandoBaseDeDados = new Promise((resolve, reject) => {
     // Aqui temos uma solicitação simulada para um banco de dados, com um atraso de 2 segundos.
     //A lógica interna estará  no servidor e nós apenas esperaríamos por uma resposta.
-    setTimeout(function () {
-        if (baseDeDados == null) {
-            reject({
-                "mensagem": "Base de dados inexistente."
-            });
-        } else {
-            resolve(baseDeDados);
-        }
-    }, 2000);
 
+    if (baseDeDados == null) {
+        reject({
+            "mensagem": "Base de dados inexistente."
+        });
+    } else {
+        resolve(baseDeDados);
+    }
 });
 
 // Aqui realizamos uma consulta da promessa, aguardando sua resposta assíncrona
 consultandoBaseDeDados
     .then((resposta) => {
-     //   console.log(resposta);
-
-    }).then(
-
-    ).catch((err) => {
-     //   console.log(err);
+        let usuarioRegistrado = {
+            nome: resposta.resultado.nome.primeiro + " " + resposta.resultado.nome.ultimo,
+            email: resposta.resultado.email,
+            foto: resposta.resultado.imagem.media
+        }
+        return usuarioRegistrado
+    }).then((resposta) => {
+        renderizarDadosUsuario(resposta)
+    }).catch((erro) => {
+        console.log(erro);
     });
 
 function renderizarDadosUsuario(dados) {
@@ -91,8 +94,13 @@ function renderizarDadosUsuario(dados) {
     // a foto, o nome completo do usuário e seu e-mail.
     //  Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
     //  Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
-    const objetoJavascript = JSON.parse(baseDeDados)
-    console.log(objetoJavascript);
+    /* const objetoJavascript = JSON.parse(baseDeDados)
+    console.log(objetoJavascript); */
+/*     document.getElementsByClassName('tarjeta').innerHTML += "teste2"
+    console.log(dados.nome); */
+    document.getElementById('tarjeta').innerHTML += `
+     <img src="${dados.foto}">  <img>
+     <div> ${dados.nome}  <div>
+     <div> ${dados.email} <div>
+    `
 }
-
-renderizarDadosUsuario()
