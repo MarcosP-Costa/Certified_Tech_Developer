@@ -102,9 +102,34 @@ buttonElement.addEventListener('click', event => {
     userObject.password = password
 
     let userObjectJSON = JSON.stringify(userObject)
-    console.log(userObjectJSON)
+   // console.log(userObjectJSON)
 
     event.preventDefault()
+
+    let configRequest = {
+        method: "POST", //método HTTP
+        headers: { //Cabeçalho da requisição
+            "Content-type": "Application/json"
+        },
+        body: userObjectJSON //Corpo da requisição
+    }
+
+    fetch('https://ctd-todo-api.herokuapp.com/v1/users/login', configRequest)
+    .then(resultado =>{
+        if(resultado.status == 200 || resultado.status == 201){
+            return resultado.json()
+        }else{
+            throw resultado
+        }
+    })
+    .then(resultado =>{
+        console.log(resultado);
+        sessionStorage.setItem("jwt", resultado.jwt)
+        location.href = "tarefas.html";
+    })
+    .catch(erro =>{
+        console.log(erro);
+    })
 })
 
 //------------------------function to remove blank spaces from any border----------------------------

@@ -208,8 +208,8 @@ buttonElement.addEventListener('click', event => {
     let email = removeBlankSpace(emailInput.value)
     let password = removeBlankSpace(passwordInput.value)
 
-    signUpUserObject.name = name
-    signUpUserObject.surname = surname
+    signUpUserObject.firstName = name
+    signUpUserObject.lastName = surname
     signUpUserObject.email = email
     signUpUserObject.password = password
 
@@ -238,6 +238,8 @@ buttonElement.addEventListener('click', event => {
         })
         .then(resultado =>{
             console.log(resultado);
+            alert("Cadastro Feito com Sucesso!")
+            location.href("index.html")
         })
         .catch()
 
