@@ -4,9 +4,9 @@ let botao3 = document.getElementById("botao3")
 let botao4 = document.getElementById("botao4")
 
 let usuario = {
-    firstName: "Ma1r21cosP2",
-    lastName: "C1o2st1a2",
-    email: "marc12os1no2kbuk@gmail.com",
+    firstName: "sdfdsasdasfsd",
+    lastName: "C1osdasddsafsdas1a2",
+    email: "masdfsdfasdck@gmail.com",
     password: "12341234"
 }
 
@@ -23,8 +23,8 @@ let configRequest2 = {
     method: "GET",
     headers: {
         "Content-type": "Application/json",
-        "Authorization": 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6I…U1NH0.zvAV2fW-j1GlsM0taxVUZ1NWj33zGWaGLIoQDf8EO0o'
-    }
+        "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hYXNkY2tAZ21haWwuY29tIiwiaWQiOjUxNjQsImlhdCI6MTY1NjQzNTA5MX0.Veb8j--me990v-l76riydVtpH35mJP8tHM6_73786Co"
+    },
 }
 
 
